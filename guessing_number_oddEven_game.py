@@ -9,16 +9,16 @@ while number_of_guessing < 20:
     guess = input()
 
     if number % 2 == 0 and guess == "yes" or guess == "Yes":
-        print("You're right!")
+        print("You're right! ", number, " is an even number")
         break
     elif number % 2 == 0 and guess == "no" or guess == "No":
-        print("You're wrong!")
+        print("You're wrong! ", number, " is an even number")
         break
     elif number % 2 != 0 and guess == "no" or guess == "No":
-        print("You're right!")
+        print("You're wrong! ", number, " is an odd number")
         break
     elif number % 2 != 0 and guess == "yes" or guess == "Yes":
-        print("You're wrong!")
+        print("You're right! ", number, " is an odd number")
         break
     elif number_of_guessing == 20:
         print("You're ran out of guesses")
